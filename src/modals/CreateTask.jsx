@@ -19,9 +19,9 @@ const CreateTask = ({modal, toggle, save}) => {
         let taskObj = {};
         taskObj['name'] = taskName;
         taskObj['description'] = description;
-        save(taskObj);
         setTaskName('');
         setDescription('');
+        save(taskObj);
     }
 
     return (
